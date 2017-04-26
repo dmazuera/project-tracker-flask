@@ -9,7 +9,8 @@
   <p>GitHub Account: {{ github }}</p>
   <ul>
     {% for grade in grades_list %}
-    <li>Title: {{ grade[0] }} Grade: {{ grade[1] }} </li>
+    <li>Title: <a href= "/project?title={{grade[0]}}">{{ grade[0] }}</a> 
+    <br>Grade: {{ grade[1] }} </li>
     {% endfor %}
    </ul>
 </body>
